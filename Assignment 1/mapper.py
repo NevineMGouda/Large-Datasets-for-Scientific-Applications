@@ -30,11 +30,11 @@ def main():
         # tokenize the tweet text into a list of words by splitting with whitespace
         tweet_token = tweet_text.split()
         # This will map the total number of unique tweets available
-        print "TotalCount,1"
+        print("TotalCount,1")
         # This will output each word with 1 after it to prepare the records for the shuffle&sort and reduce stages.
         for word in tweet_token:
             if word in LOOKUP_LIST:
-                print word + ",1"
+                print(word + ",1")
 
 
 if __name__ == "__main__":
